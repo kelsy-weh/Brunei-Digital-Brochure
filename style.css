@@ -204,35 +204,41 @@ book-wrap {
   margin: 0 auto;
 }
 
-/* Position controls in the top-right corner inside the flipbook container */
+/* Navigation arrows centered vertically on the sides */
 .flip-controls {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
   display: flex;
-  gap: 8px;
-  z-index: 100; /* Keeps controls above page contents */
-  pointer-events: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 100;
+  pointer-events: none;
 }
 
 .iconbtn {
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   border: 1px solid var(--gold);
-  background: rgba(6, 23, 42, 0.9);
+  background: rgba(6, 23, 42, 0.92);
   color: var(--gold2);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
+  pointer-events: auto;
 }
 
 .iconbtn:hover {
   background: var(--gold);
   color: #06172a;
+  transform: scale(1.08);
 }
 
 /* Fix image container sizing and prevents overflow clipping */
