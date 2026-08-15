@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Brunei Darussalam — an interactive luxury digital brochure." name="description"/>
+<title>Brunei Darussalam | A Journey of Heritage</title>
+
+<link href="style.css" rel="stylesheet"/></head>
+<body>
+<nav class="topbar">
+<a class="logo" href="#home">BRUNEI • DARUSSALAM</a>
+<div class="menu">
+<a href="#journey">THE JOURNEY</a>
+<a href="#heritage">HERITAGE</a>
+<a href="#gastronomy">GASTRONOMY</a>
+<a href="#values">VALUES</a>
+<a class="cta" href="#brochure">OPEN BROCHURE</a>
+</div>
+</nav>
+<header class="hero" id="home">
+<div class="hero-bg"></div>
+<div class="hero-content">
+<div>
+<div class="eyebrow">Selamat Datang • Negara Brunei Darussalam</div>
+<h1>BRUNEI</h1>
+<h2 class="serif">DARUSSALAM</h2>
+<div class="gold-line"></div>
+<p>A journey into a nation where timeless traditions meet boundless hospitality—rooted in faith, blessed with heritage, and united in harmony.</p>
+<div class="hero-buttons">
+<a class="btn primary" href="#brochure">Enter the Experience</a>
+<a class="btn" href="#journey">Discover Brunei</a>
+</div>
+</div>
+<div class="cover-frame">
+  <img alt="Luxury Brunei Darussalam brochure cover" src="brochure.png" style="width: 100%; height: auto; display: block;" />
+</div>
+</div>
+</header>
+<section class="section" id="journey">
+<div class="section-inner reveal">
+<div class="section-head">
+<div class="eyebrow">01 • The Heart of Borneo</div>
+<h2>A Living Legacy</h2>
+<div class="ornament">✦ ❧ ✦</div>
+<p>Brunei’s story is written through royal traditions, waterways, craftsmanship, cuisine, and the values that continue to shape everyday life.</p>
+</div>
+<div class="story">
+<div class="panel">
+<h3>Kampong Ayer</h3>
+<p>The “Venice of the East” is a living water village with a history stretching back more than 600 years. Homes and pathways rise above the Brunei River, preserving a remarkable relationship between community and water.</p>
+<div class="stats">
+<div class="stat"><b>600+</b><span>Years of legacy</span></div>
+<div class="stat"><b>Water</b><span>Way of life</span></div>
+<div class="stat"><b>Brunei</b><span>River</span></div>
+</div>
+</div>
+<div class="panel">
+<h3>Melayu Islam Beraja</h3>
+<p>MIB unites Malay culture, Islamic values, and the institution of monarchy. It serves as a guiding philosophy for peace, prosperity, identity, and the well-being of all.</p>
+<p class="gold script" style="font-size:34px">Proud heritage. Bright future.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="brochure">
+<div class="section-inner reveal">
+<div class="section-head">
+<div class="eyebrow">02 • Interactive Edition</div>
+<h2>The Digital Brochure</h2>
+<div class="ornament">✦ ─── ✦ ─── ✦</div>
+<p>Turn through selected chapters of Brunei’s culture and heritage.</p>
+</div>
+<div class="flipbook-wrap">
+<div class="flipbook" id="book">
+<div class="book-shadow"></div>
+
+<!-- PAGE 1: COVER -->
+<article class="page active">
+<div class="page-grid">
+<div class="page-image"><img alt="Brochure image 1" id="brochureImage1" src="1b.png" style="object-position:center;"/></div>
+<div>
+<div class="eyebrow">Cover • 01</div>
+<h3>The Abode of Peace</h3>
+<p>Welcome to Brunei Darussalam—Heart of Borneo, Soul of ASEAN. Discover royal elegance, tropical landscapes, traditional artistry, and warm hospitality.</p>
+<p class="gold">Explore the chapters using the navigation arrows below.</p>
+</div>
+</div><div class="page-number">01</div>
+</article>
+
+<!-- PAGE 2: HERITAGE & CRAFT -->
+<article class="page">
+<div class="page-grid">
+<div>
+<div class="eyebrow">Heritage • 02</div>
+<h3>Melayu Islam Beraja (MIB)</h3>
+<p>The guiding philosophy of Brunei Darussalam, uniting Malay culture, Islamic values, and the institution of monarchy.</p>
+<p>Featuring traditional arts like Tenunan Jong Sarat and the Gulingtangan Ensemble.</p>
+</div>
+<div class="page-image"><img alt="Brochure image 2" id="brochureImage2" src="2b.png" style="object-position:center;"/></div>
+</div><div class="page-number">02</div>
+</article>
+
+<!-- PAGE 3: KAMPONG AYER & VALUES -->
+<article class="page">
+<div class="page-grid">
+<div class="page-image"><img alt="Brochure image 3" id="brochureImage3" src="3b.png" style="object-position:center;"/></div>
+<div>
+<div class="eyebrow">Legacy • 03</div>
+<h3>Kampong Ayer & Values</h3>
+<p>A living legacy for over 600 years. Known as the "Venice of the East," built on values of Faith, Loyalty, Harmony, and Hospitality.</p>
+<button class="btn primary" onclick="openModal('craft')">Learn More</button>
+</div>
+</div><div class="page-number">03</div>
+</article>
+
+<!-- PAGE 4: GASTRONOMY -->
+<article class="page">
+<div class="page-grid">
+<div>
+<div class="eyebrow">Gastronomy • 04</div>
+<h3>The Royal Gastronomy</h3>
+<p>A taste of tradition and a feast of heritage featuring Ambuyat, Nasi Katok, and Kuih Cincin—iconic flavors enjoyed across generations.</p>
+<button class="btn primary" onclick="openModal('food')">Explore Cuisine</button>
+</div>
+<div class="page-image"><img alt="Brochure image 4" id="brochureImage4" src="4b.png" style="object-position:center;"/></div>
+</div><div class="page-number">04</div>
+</article>
+
+<!-- PAGE 5: GALLERY OVERVIEW -->
+<article class="page">
+<div class="page-grid">
+<div class="page-image"><img alt="Brochure image 5" id="brochureImage5" src="5b.png" style="object-position:center;"/></div>
+<div>
+<div class="eyebrow">Overview • 05</div>
+<h3>A Tapestry of Tradition</h3>
+<p>A visual montage bringing together Brunei's majestic architecture, intricate crafts, musical traditions, and rich culinary culture.</p>
+</div>
+</div><div class="page-number">05</div>
+</article>
+
+<!-- PAGE 6: ASEAN & FUTURE -->
+<article class="page">
+<div class="page-grid">
+<div>
+<div class="eyebrow">Vision • 06</div>
+<h3>Together for a Stronger ASEAN</h3>
+<p>Proud heritage, bright future. Brunei Darussalam works alongside its ASEAN family for peace, prosperity, and a sustainable regional future.</p>
+</div>
+<div class="page-image"><img alt="Brochure image 6" id="brochureImage6" src="6b.png" style="object-position:center;"/></div>
+</div><div class="page-number">06</div>
+</article>
+
+</div>
+</div>
+<div class="flip-controls">
+<button aria-label="Previous page" class="iconbtn" onclick="prevPage()">‹</button>
+<button aria-label="Next page" class="iconbtn" onclick="nextPage()">›</button>
+</div>
+</div>
+</section>
+<section class="section" id="heritage">
+<div class="section-inner reveal">
+<div class="section-head">
+<div class="eyebrow">03 • Living Culture</div>
+<h2>Traditional Arts &amp; Heritage</h2>
+<div class="ornament">❧ ✦ ❧</div>
+</div>
+<div class="cards">
+<article class="lux-card"><span class="num">01 / TEXTILE</span><h3>Tenunan Jong Sarat</h3><p>Exquisite hand-woven silk adorned with precious-looking gold and silver detailing, passed through generations as a symbol of refined heritage.</p></article>
+<article class="lux-card"><span class="num">02 / MUSIC</span><h3>Gulingtangan</h3><p>The rhythmic heart of Brunei’s traditional music, with melodic brass gongs accompanying royal occasions and celebrations.</p></article>
+<article class="lux-card"><span class="num">03 / WATER</span><h3>Kampong Ayer</h3><p>A remarkable settlement on stilts that embodies community, history, and Brunei’s enduring relationship with the river.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="gastronomy">
+<div class="section-inner reveal">
+<div class="section-head">
+<div class="eyebrow">04 • A Taste of Tradition</div>
+<h2>The Royal Gastronomy</h2>
+<div class="ornament">✦ ❧ ✦</div>
+</div>
+<div class="cards">
+<article class="lux-card"><span class="num">01 / NATIONAL DISH</span><h3>Ambuyat</h3><p>Made from sago palm starch and traditionally enjoyed with bamboo chopsticks and a variety of flavorful cacah sauces.</p></article>
+<article class="lux-card"><span class="num">02 / LOCAL STAPLE</span><h3>Nasi Katok</h3><p>Fragrant rice paired with crispy fried chicken and spicy sambal—simple, comforting, and unmistakably Bruneian.</p></article>
+<article class="lux-card"><span class="num">03 / SWEET</span><h3>Kuih Cincin</h3><p>Flower-shaped sweet cakes made with brown palm sugar and rice flour, fried to a golden, crunchy finish.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="values">
+<div class="section-inner reveal">
+<div class="section-head">
+<div class="eyebrow">05 • The Bruneian Spirit</div>
+<h2>Values That Define Us</h2>
+</div>
+<div class="values">
+<div class="value"><div class="symbol">☾</div><h3>Faith</h3><p>Guided by Islam, faith shapes character and strengthens unity.</p></div>
+<div class="value"><div class="symbol">♛</div><h3>Loyalty</h3><p>Respect and loyalty to the King and country are deeply cherished.</p></div>
+<div class="value"><div class="symbol">❖</div><h3>Harmony</h3><p>A peaceful society built on mutual respect, compassion, and togetherness.</p></div>
+<div class="value"><div class="symbol">❀</div><h3>Hospitality</h3><p>Warm smiles and open hearts welcome every guest as family.</p></div>
+</div>
+</div>
+</section>
+<section class="quote">
+<div class="script">“Di bawah naungan MIB, kita bersatu, maju bersama.”</div>
+<p>Under the shelter of MIB, we unite and progress together towards a brilliant future.</p>
+</section>
+<footer class="footer">
+BRUNEI DARUSSALAM • RICH HERITAGE • VIBRANT CULTURE • WARM HOSPITALITY • LASTING FRIENDSHIPS • A SHARED FUTURE
+</footer>
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()">
+<div class="modal-box">
+<button class="close" onclick="closeModal()">×</button>
+<div id="modalContent"></div>
+</div>
+</div>
+<script>
+let current=0;
+const pages=[...document.querySelectorAll('.page')];
+function showPage(n){
+ current=Math.max(0,Math.min(pages.length-1,n));
+ pages.forEach((p,i)=>{p.classList.toggle('active',i===current);p.classList.toggle('prev',i<current);p.classList.toggle('back',i>current)});
+}
+function nextPage(){showPage(current+1)}
+function prevPage(){showPage(current-1)}
+function openModal(type){
+ const content=document.getElementById('modalContent');
+ if(type==='craft') content.innerHTML='<h3>Tenunan Jong Sarat</h3><p>This traditional woven textile is celebrated for its intricate craftsmanship and luxurious appearance. Its patterns and materials connect contemporary Brunei with generations of artistic knowledge.</p>';
+ if(type==='food') content.innerHTML='<h3>The Royal Gastronomy</h3><p>Ambuyat, Nasi Katok, and Kuih Cincin each tell a different story: staple ingredients, everyday comfort, and traditional sweets brought together through Brunei’s love of food and hospitality.</p>';
+ document.getElementById('modal').classList.add('open');
+}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')nextPage();if(e.key==='ArrowLeft')prevPage();if(e.key==='Escape')closeModal()});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+</script>
+<script>
+function setupBrochureImageInputs(){
+  document.querySelectorAll('.page-image.upload-slot input[type="file"]').forEach(input=>{
+    input.addEventListener('change',function(){
+      const file=this.files && this.files[0];
+      if(!file) return;
+      const slot=this.closest('.page-image.upload-slot');
+      const img=slot.querySelector('img');
+      const reader=new FileReader();
+      reader.onload=e=>{
+        img.src=e.target.result;
+        slot.classList.add('has-image');
+      };
+      reader.readAsDataURL(file);
+    });
+  });
+}
+setupBrochureImageInputs();
+</script></body>
+</html>
